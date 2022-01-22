@@ -20,7 +20,6 @@ fn help(){
 
 fn rock(){
     let mut rng = rand::thread_rng();
-    //Doesn't pick 3 if 3 is the max range for some reason? the max range will stay at 4 then.
     let mut rps = rng.gen_range(1..4);
 
     match rps {
@@ -33,7 +32,6 @@ fn rock(){
 
 fn paper(){
     let mut rng = rand::thread_rng();
-    //See above note in the rock() function to see why max range is 4 not 3.
     let mut rps = rng.gen_range(1..4);
     
     match rps {
@@ -46,7 +44,6 @@ fn paper(){
 
 fn skisors(){
     let mut rng = rand::thread_rng();
-    //See above note in the rock() function to see why max range is 4 not 3.
     let mut rps = rng.gen_range(1..4);
     
     match rps {
